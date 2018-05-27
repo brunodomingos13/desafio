@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seleção Estágio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="Cadastrar.html" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+if (field.defaultValue == field.value) field.value = '';
+else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="header_painel">
+    <div id="site_title">
+      <h1>VIRTURIAN<span>webapp</span></h1>      
+    </div>
+    <div id="box_pesquisa">
+      <form method="get" action="#">
+        <input name="keyword" type="text" value="Pesquisar..." id="searchfield"  onfocus="clearText(this)" onblur="clearText(this)" />
+        <input type="submit" name="submit" id="searchbutton" value="" />
+      </form>
+    </div>
+  </div>  
+  <div id="banner_painel">
+    <div id="menu_selecao">
+      <ul>
+        <li><a href="#" class="current">01<span class="current">Início</span></a></li>
+        <li><a href="produtos.html">02<span>Produtos</span> </a>     
+        </li>          
+        <li><a href="cadastrar.html">03<span>Cadastrar</span></a></li>
+        <li><a href="visualizar.html">04<span>Visualizar</span></a></li>
+        <li><a href="sobre.html">05<span>Sobre</span></a></li>
+        <li><a href="contate_nos.html">06<span>Contate-nos</span></a></li>
+      </ul>
+    </div>    
+  </div>  
+  <div id="content_top"></div>
+  <div id="content">
+    <div id="content_left">
+      <h1>Sobre</h1>
+      <p>O <strong>Virturian webapp</strong> foi projetado para executar inicialmente algumas funções como: cadastro de motores, visualização dos motores cadastrados, edição dos motores e a remoção de motores.</p>
+      <p>Essa aplicação vai gerir motores elétricos de indução trifásicos que possuem algumas características como: </p>
+          <li>Número de polos: 2, 4, 6 ou 8;</li>
+          <li>Tensão de rede [V]: 220, 380 ou 440;</li>
+          <li>Regime de serviço: S1, S2, S3, S4 OU S5;</li>
+          <li>Corrente nominal [A]: variada;</li>
+          <li>Potência nominal [W]: variada;</li>
+          <li>Torque máximo [Nm]: variado.</li>          
+    </div>
+  </div>
+  <div id="content_bottom"></div>
+  <div id="footer">
+      <a href="http://127.0.0.1:49273/Desafio/index.html#">Início</a> | 
+      <a href="produtos.html">Produtos</a> | 
+      <a href="cadastrar.html">Cadastrar</a> | 
+      <a href="visualizar.html">Visualizar</a> |
+      <a href="sobre.html">Sobre</a> |
+      <a href="contate_nos.html">Contate-nos</a> <br/>Copyright &copy; 2018 
+      <a href="http://www.virturian.com/pt/"><strong>VIRTURIAN</strong></a>
+  </div>
+</div>
+</body>
+</html>

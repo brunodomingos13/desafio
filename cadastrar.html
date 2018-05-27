@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seleção Estágio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="Cadastrar.html" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+if (field.defaultValue == field.value) field.value = '';
+else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="header_painel">
+    <div id="site_title">
+      <h1>VIRTURIAN<span>webapp</span></h1>      
+    </div>
+    <div id="box_pesquisa">
+      <form method="get" action="#">
+        <input name="keyword" type="text" value="Pesquisar..." id="searchfield"  onfocus="clearText(this)" onblur="clearText(this)" />
+        <input type="submit" name="submit" id="searchbutton" value="" />
+      </form>
+    </div>
+  </div>  
+  <div id="banner_painel">
+    <div id="menu_selecao">
+      <ul>
+        <li><a href="http://127.0.0.1:49273/Desafio/index.html#" class="current">01<span class="current">Início</span></a></li>
+        <li><a href="produtos.html">02<span>Produtos</span> </a>     
+        </li>          
+        <li><a href="cadastrar.html">03<span>Cadastrar</span></a></li>
+        <li><a href="visualizar.html">04<span>Visualizar</span></a></li>
+        <li><a href="sobre.html">05<span>Sobre</span></a></li>
+        <li><a href="contate_nos.html">06<span>Contate-nos</span></a></li>
+      </ul>
+    </div>    
+  </div>  
+  <div id="content_top"></div>
+  <div id="content">
+    <div id="content_left">
+      <h1>Cadastrar</h1>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <label for="Motor">Cadastrar Motor: </label>
+                <input type="text" id="motor" />
+            </div>            
+            <div>
+                <label for="polos">Numero de Polos: </label>
+                <input type="text" id="polos" />
+            </div>
+            <div>
+                <label for="tensao">Tensão de rede[V]:  </label>
+                <input type="text" id="tensao" />
+            </div>
+            <div>
+                <label for="regime">Regime de Serviço: </label>
+                <input type="text" id="regime" />
+            </div>
+             <div>
+                <label for="corrente">Corrente Nominal[A]: </label>
+                <input type="text" id="corrente" />
+            </div>
+
+            <div>
+                <label for="potencia">Potencia Nominal[W]: </label>
+                <input type="text" id="potencia" />
+            </div>
+            <div>
+                <label for="torque">Torque máximo[Nm]: </label>
+                <input type="text" id="torque" />
+            </div>
+            <div class="button">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+  </div>
+  <div id="content_bottom"></div>
+  <div id="footer">
+      <a href="http://127.0.0.1:49273/Desafio/index.html#">Início</a> | 
+      <a href="produtos.html">Produtos</a> | 
+      <a href="cadastrar.html">Cadastrar</a> | 
+      <a href="visualizar.html">Visualizar</a> |
+      <a href="sobre.html">Sobre</a> |
+      <a href="contate_nos.html">Contate-nos</a> <br/>Copyright &copy; 2018 
+      <a href="http://www.virturian.com/pt/"><strong>VIRTURIAN</strong></a>
+  </div>
+</div>
+</body>
+</html>
